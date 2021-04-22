@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  height: 30vh;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-image: url("./pattern-bg.png");
+}
+
+.header__title {
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin: 10px;
+}
+
+.header__input {
+  position: relative;
+  background: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  min-width: 80%;
+  max-width: 100%;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.header__input input {
+  width: calc(100% - 50px);
+  height: 50px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.header__input__buttton {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  outline: none;
+  background: #2b2b2b;
+  cursor: pointer;
+}
+
+.header__input__buttton svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+}
+
+.header__input__buttton svg path {
+  fill: white;
+}
+
+.header__result {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 14px gainsboro;
+          box-shadow: 0 0 14px gainsboro;
+  padding: 20px 15px;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 9;
+}
+
+.header__result__detail {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 15px;
+  width: auto;
+  min-width: 250px;
+}
+
+.header__result__detail__title {
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #969696;
+}
+
+.header__result__detail__value {
+  color: black;
+  font-size: 18px;
+}
+
+.header__result .seperator {
+  display: inline-block;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 1px;
+  margin: 5px 0;
+  background: gainsboro;
+}
+
+.body {
+  height: 70vh;
+  z-index: -1;
+}
+
+.loader {
+  height: 70vh;
+  width: 100%;
+  background: url("./pattern-bg.png");
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 50vh;
+  }
+  .header__result {
+    width: 90%;
+  }
+  .header__result__detail {
+    width: 100%;
+    text-align: center;
+  }
+  .leaflet-container {
+    height: 150vh !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
