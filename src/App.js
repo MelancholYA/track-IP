@@ -40,7 +40,12 @@ function App() {
       <div className="header">
         <h1 className="header__title">IP Address Tracker</h1>
         <form className="header__input" onSubmit={formSubmit}>
-          <input type="text" name="ip" className="header__input__input" />
+          <input
+            type="text"
+            name="ip"
+            className="header__input__input"
+            placeholder="Search for any IP address..."
+          />
           <button className="header__input__buttton">
             <svg className="svg-icon" viewBox="0 0 20 20">
               <path
